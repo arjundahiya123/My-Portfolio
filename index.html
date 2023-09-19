@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("heroimage.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+    
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  justify-content: space-evenly;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+    
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  background-color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  color: white;
+  background-color: #222;
+}
+
+.about-section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  padding: 5px 0px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    
+.experience{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
+    
+.site{
+    background-color: black;
+    }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.concontainer {
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.concolumn {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.conrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #222;
+   color: white;
+   text-align: center;
+}
+    
+</style>
+</head>
+
+<body>
+
+
+<div class="topnav">
+  <a class="active" href="#about-me">About Me</a>
+  <a href="#Work Experience">Experience</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:100px;">Arjun Dahiya</h1>
+    <p style="font-size:22px;">3 x FIFA World Champion, 4 x NBA Finals MVP, Your Next Recruit...</p>
+    <button>Learn More</button>
+  </div>
+</div>
+    
+<div class="about-section" id="about-me">
+  <h1>About Me</h1>
+</div>
+
+<div class="row" style="background-color: black;">
+  <div class="column">
+    <div class="card">
+      <img src="basketball.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Hobbies</h2>
+          <ul>
+          <li class = "title">Basketball</li>
+          <li class = "title">Soccer</li>
+          <li class = "title">Travelling</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="dog.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Favourite Animals</h2>
+          <ul>
+          <li class = "title">Dogs</li>
+          <li class = "title">Pandas</li>
+          <li class = "title">Cheetahs</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="batmobile.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Favourite Superheros</h2>
+        <ul>
+          <li class = "title">Batman</li>
+          <li class = "title">Spider-Man</li>
+          <li class = "title">Iron Man</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="experience", id="Work Experience" style="padding-top: 50px;">
+    <h1>Work Experience</h1>
+    <h3> <span style="float: left;"> FIFA World Champion</span>
+        <span style="float: right;">Dec 2010-2022</span>
+    </h3>
+    <br>
+
+<ul>
+    <p style="text-align: left; padding-bottom: 10px; color: #D1D1D1;">Represented 140 different countries in the biggest known soccer tournament of all time winning multiple awards for most goals scored, most assists, and most saves. Played every single position on the field including but not limited to striker, goal keeper, referee, head coach, assistant coach, and paramedic.
+</ul>
+    
+<h3> <span style="float: left;"> NBA Finals MVP</span>
+        <span style="float: right;">June 2016</span>
+    </h3>
+    <br>
+
+<ul>
+    <p style="text-align: left; padding-bottom: 10px; color: #D1D1D1;">With 2 weeks of dedicated training, rose through the ranks to become the #1 first-round draft pick in the 2021 NBA draft and single-handedly led the GSW to rise 15 places in the regular season compared to the previous regular season and paved the way to win the 2022 NBA finals averaging 30 pts 30 assists and 30 blocks a game.
+</ul>
+    <h3> <span style="float: left;"> F1 Driver</span>
+        <span style="float: right;">June 2014</span>
+    </h3>
+    <br>
+
+<ul>
+    <p style="text-align: left; padding-bottom: 10px; color: #D1D1D1;">Ideated, designed, modelled, developed, manufactured, sponsored, tested, and refurnished 4000 lbs of metals, rubber, and wiring into a high-quality automobile which made it to the final round of the F1 World Championship. Although the automobile came in 2nd place this year after achieving a top speed of 500km/minute, this rate it projected to double in the upcoming year.
+</ul>
+    
+<div style="padding-bottom: 200px;">
+    
+</div>
+    
+<div class="concontainer", id="contact" style="padding-bottom: 50px;">
+  <div style="text-align:center">
+    <h1 style="color: white;">Contact Us</h2>
+    <p style="color: white;">Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="conrow">
+    <div class="column">
+      <img src="mail.png" style="width:100%">
+    </div>
+    <div class="concolumn">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Canada">Canada</option>
+          <option value="USA">USA</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+    
+<div class="footer">
+  <p>Arjun's Portfolio ~ for more info call: (519) - 667 - 1111</p>
+</div>
+
+</body>
+</html>
